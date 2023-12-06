@@ -51,7 +51,7 @@ function resetGame() {
     // Clear existing messages
     document.getElementById("results").innerText = "";
 
-    hiddenCardElement.src = "./cards/BACK.png";
+    hiddenCardElement.src = "./BACK.png";
 
     // Clear card images
     document.getElementById("dealer-cards").innerHTML = "";
@@ -91,14 +91,14 @@ function startGame(){
     console.log(dealerSum);
 
     hiddenCardElement = document.createElement("img");
-    hiddenCardElement.src = "./cards/BACK.png";
+    hiddenCardElement.src = "./BACK.png";
     document.getElementById("dealer-cards").innerHTML = "";
     document.getElementById("dealer-cards").append(hiddenCardElement);
 
     while(dealerSum < 17){
         let cardImg = document.createElement("img");
         let card = deck.pop();
-        cardImg.src = "./cards/" + card + ".png";
+        cardImg.src = card + ".png";
         dealerSum += getValue(card);
         dealerAceCount += checkAce(card);
         document.getElementById("dealer-cards").append(cardImg);
@@ -109,7 +109,7 @@ function startGame(){
     for(let i=0;i<2;i++){
         let cardImg= document.createElement("img");
         let card = deck.pop();
-        cardImg.src = "./cards/" + card + ".png";
+        cardImg.src = card + ".png";
         playerSum += getValue(card);
         aceCount += checkAce(card);
         document.getElementById("player-cards").append(cardImg);
@@ -126,7 +126,7 @@ function startGame(){
         gameStarted = true;
         let cardImg= document.createElement("img");
         let card = deck.pop();
-        cardImg.src = "./cards/" + card + ".png";
+        cardImg.src = card + ".png";
         playerSum += getValue(card);
         aceCount += checkAce(card);
         document.getElementById("player-cards").append(cardImg);
@@ -144,7 +144,7 @@ function startGame(){
         canHit=false;
         gameStarted = false;
         // document.getElementById("hidden").src = "./cards/" + hidden + ".png";
-        hiddenCardElement.src = "./cards/" + hidden + ".png";
+        hiddenCardElement.src = hidden + ".png";
 
         let message = "";
         if (playerSum > 21) {
