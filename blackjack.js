@@ -51,7 +51,7 @@ function resetGame() {
     // Clear existing messages
     document.getElementById("results").innerText = "";
 
-    hiddenCardElement.src = "./BACK.png";
+    hiddenCardElement.src = "BACK.png";
 
     // Clear card images
     document.getElementById("dealer-cards").innerHTML = "";
@@ -91,7 +91,7 @@ function startGame(){
     console.log(dealerSum);
 
     hiddenCardElement = document.createElement("img");
-    hiddenCardElement.src = "./BACK.png";
+    hiddenCardElement.src = "BACK.png";
     document.getElementById("dealer-cards").innerHTML = "";
     document.getElementById("dealer-cards").append(hiddenCardElement);
 
