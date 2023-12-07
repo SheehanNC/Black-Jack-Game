@@ -11,7 +11,7 @@ body {
     max-width: 800px; /* Set a maximum width for the game table */
     margin: 50px auto; /* Center the game table */
     background-color: #a0dceb;
-    border: 10px solid #4b2d00; /* White border */
+    border: 10px solid #00294b; /* White border */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Shadow for a 3D effect */
     padding: 20px;
     border-radius: 15px; /* Rounded corners for a modern look */
